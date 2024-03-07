@@ -1,0 +1,12 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "home",
+  "main": "js.js",
+  "scripts": {
+    "start": "node js.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}
