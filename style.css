@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --info-color: #ff6b08;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-section {
+  padding: 20px 0 40px 0;
+  margin: 0 auto;
+  width: 320px;
+  font-family: "Roboto", sans-serif;
+}
+.film-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.film-item {
+  width: 280px;
+  height: 443px;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 350ms;
+}
+.film-item:hover {
+  scale: 1.04;
+}
+.film-image {
+  width: 100%;
+  height: 402px;
+  border-radius: 6px;
+}
+.film-details {
+  margin: 5px 0 0 0;
+}
+.film-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+.film-info {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--info-color);
+  line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    width: 768px;
+    padding: 60px 0;
+  }
+  .film-list {
+    gap: 25px;
+  }
+  .film-item {
+    width: 336px;
+    height: 495px;
+  }
+  .film-image {
+    height: 455px;
+  }
+  .film-details {
+    margin: 5px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-section {
+    width: 1280px;
+  }
+  .film-list {
+    justify-content: flex-start;
+    padding-left: 22.5px;
+  }
+  .film-item {
+    width: 395px;
+    height: 634px;
+  }
+  .film-image {
+    height: 574px;
+  }
+  .film-details {
+    margin: 5px 0 0 0;
+  }
+  .film-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .film-info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
